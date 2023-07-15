@@ -7,7 +7,7 @@ port = 60000  # initiate port
 payload_size = 2048
 s.bind((host, port))  # bind host address and port together
 print('Server listening....')
-ggg
+
 while True:
     print("Waiting to receive message from client ... ... ...")
     data, addr = s.recvfrom(payload_size)  # Read from UDP socket into data
