@@ -9,7 +9,7 @@ s.bind((host, port))  # bind host address and port together
 print('Server listening....')
 
 while True:
-    print("Waiting to receive message from client ... ... ...")
+    print("Waiting to receive message from client...")
     data, addr = s.recvfrom(payload_size)  # Read from UDP socket into data
     ReceivedMessage = data.decode()  # Receive the filename from the client
     print("Received filename from Client: %s" % ReceivedMessage)

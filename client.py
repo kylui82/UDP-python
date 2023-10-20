@@ -12,8 +12,8 @@ try:
     s.sendto(file_name, (host, port))  # send the filename to the server
     print("Sending filename %s ..." % file_name.decode())
     data, server_addr = s.recvfrom(payload_size)  # Read data from UDP socket into data
-    Recv_Message = data.decode()
-    print('Received message: \n', Recv_Message)  # print out received string
+    received_message = data.decode()
+    print('Received message: \n', received_message)  # print out received string
 
 finally:
     s.close()  # close connection
